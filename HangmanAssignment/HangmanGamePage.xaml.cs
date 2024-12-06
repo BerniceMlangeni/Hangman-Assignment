@@ -14,8 +14,7 @@ public partial class HangmanGamePage : ContentPage
         { "java", "A popular object-oriented programming language" },
         { "cpu", "Is referred to as the brain of the computer" },
         {"cookies", "Information that is sent from the browser to the web server" },
-        {"github", " A web-based platform that allows users to store, share, and collaborate on code, web pages, and other content" },
-        {"bus", "A network topology where devices are connected to a central cable that carries its traffic and communication is unidirectional "},
+        {"github", " A platform that allows users to store, share, and collaborate on code, web pages, and other content" }
     };
 
     //stores all the words the user guesses
