@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HangmanAssignment.HangmanGamePage"
+             Title="MAUI Hangman Assignment"
+             BackgroundColor="#E9EFEC">
+    
+    <VerticalStackLayout>
+        <Label Text="Welcome to Hangman" 
+               HorizontalTextAlignment="Center" 
+               HorizontalOptions="Center" 
+               FontAttributes="Bold" 
+               FontSize="40"/>
+
+        <Image x:Name="HangmanImage" 
+               Margin="40" 
+               Source="hang1.png" 
+               HorizontalOptions="Center"/>
+
+        <Label x:Name="HintLabel" 
+               FontSize="20" 
+               HorizontalOptions="Center" 
+               TextColor="Blue" 
+               />
+
+
+
+        <Label x:Name="WordDisplay" 
+               FontAttributes="Bold" 
+               FontSize="30" 
+               HorizontalOptions="Center" 
+                
+               Text="_ _ _ _ _ _ _"/>
+
+
+        <Entry x:Name="GuessInput" 
+               FontSize="30" 
+               HorizontalOptions="Center" 
+                
+               Placeholder="Enter your next guess" 
+               Completed="OnGuessSubmitted"/>
+
+
+        <Label x:Name="FeedbackLabel" 
+               FontSize="20" 
+               HorizontalOptions="Center" 
+               TextColor="Red" 
+               />
+
+        <Label x:Name="AttemptsLabel" 
+               FontSize="20" 
+               HorizontalOptions="Center" 
+               Text="Attempts Remaining: 8" 
+               />
+
+        <Button Text="Guess" 
+                Clicked="OnGuessButtonClicked"
+                Margin="20"/>
+
+        <Button Text="Play again" 
+                BackgroundColor="#50B498" 
+                Clicked="OnResetGameClicked" 
+                Margin="20"/>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
