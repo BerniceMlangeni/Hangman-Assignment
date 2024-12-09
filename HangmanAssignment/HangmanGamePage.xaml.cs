@@ -50,8 +50,8 @@ public partial class HangmanGamePage : ContentPage
         HangmanImage.Source = "hang1.png";
         FeedbackLabel.Text = string.Empty;
         AttemptsLabel.Text = "Attempts Remaining: 7";
-        HintLabel.Text = $"Hint: {currentHint}";
-        WordDisplay.Text = GenerateWordDisplay(wordToGuess.Length);
+        Hints.Text = $"Hint: {currentHint}";
+        WordsOnDisplay.Text = GenerateWordDisplay(wordToGuess.Length);
     }
 
     // Generate underscores based on the word length for relevance
@@ -65,7 +65,7 @@ public partial class HangmanGamePage : ContentPage
     //to udpate the words a user entered so they fill up the underscores
     private void UpdateWordDisplay()
     {
-        WordDisplay.Text = string.Join(" ", wordToGuess.Select(c => guessedLetters.Contains(c) ? c : '_'));
+        WordsOnDisplay.Text = string.Join(" ", wordToGuess.Select(c => guessedLetters.Contains(c) ? c : '_'));
     }
 
     private void OnGuessSubmitted(object sender, EventArgs e)

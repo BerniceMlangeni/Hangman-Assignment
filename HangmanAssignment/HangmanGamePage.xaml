@@ -17,7 +17,7 @@
                Source="hang1.png" 
                HorizontalOptions="Center"/>
 
-        <Label x:Name="HintLabel" 
+        <Label x:Name="Hints" 
                FontSize="20" 
                HorizontalOptions="Center" 
                TextColor="Blue" 
@@ -25,7 +25,7 @@
 
 
 
-        <Label x:Name="WordDisplay" 
+        <Label x:Name="WordsOnDisplay" 
                FontAttributes="Bold" 
                FontSize="30" 
                HorizontalOptions="Center" 
